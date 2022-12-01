@@ -1,16 +1,16 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace KID
 {
     /// <summary>
-    /// ¹ï¸Ü¸ê®Æ
+    /// å°è©±è³‡æ–™
     /// </summary>
     [CreateAssetMenu(menuName = "KID/Dialogue Data", fileName = "New Dialogue Data")]
     public class DialogueData : ScriptableObject
     {
-        [Header("¹ï¸ÜªÌ¦WºÙ")]
+        [Header("å°è©±è€…åç¨±")]
         public string dialogueName;
-        [Header("¹ï¸Ü¤º®e"), TextArea(2, 10)]
+        [Header("å°è©±å…§å®¹"), TextArea(2, 10)]
         public string[] dialogueContents;
     }
 }
