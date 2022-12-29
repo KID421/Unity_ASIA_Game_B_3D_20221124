@@ -17,6 +17,8 @@ namespace KID
         private GameObject propActive;
         [SerializeField, Header("啟動後的對話資料")]
         private DialogueData dataDialogueActive;
+        [SerializeField, Header("啟動後對話結束後的事件")]
+        private UnityEvent onDialogueFinishAfterActive;
 
         private string nameTarget = "PlayerCapsule";
         private DialogueSystem dialogueSystem;
@@ -42,7 +44,7 @@ namespace KID
                 }
                 else
                 {
-                    dialogueSystem.StartDialogue(dataDialogueActive);
+                    dialogueSystem.StartDialogue(dataDialogueActive, onDialogueFinishAfterActive);
                 }
             }
         }
