@@ -9,6 +9,7 @@ namespace KID
     /// <summary>
     /// 對話系統
     /// </summary>
+    [DefaultExecutionOrder(200)]
     public class DialogueSystem : MonoBehaviour
     {
         #region 資料區域
